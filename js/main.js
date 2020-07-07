@@ -1,7 +1,9 @@
 (function ($) {
   "use strict";
 
-  // Preloader (if the #preloader div exists)
+
+   //By Andy Jiang
+  // PRELOADER
   $(window).on('load', function () {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function () {
@@ -10,7 +12,7 @@
     }
   });
 
-  // Back to top button
+  // BACK TO TOP ANIM
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -23,10 +25,10 @@
     return false;
   });
 
-  // Initiate the wowjs animation library
+
   new WOW().init();
 
-  // Header scroll class
+  // HEADER SCROLL
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -39,7 +41,7 @@
     $('#header').addClass('header-scrolled');
   }
 
-  // Smooth scroll for the navigation and links with .scrollto classes
+  // SMOOTH SCROLL ANIMATION 
   $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -73,7 +75,7 @@
     }
   });
 
-  // Navigation active state on scroll
+  // NAV SCROLL
   var nav_sections = $('section');
   var main_nav = $('.main-nav, .mobile-nav');
   var main_nav_height = $('#header').outerHeight();
@@ -92,13 +94,11 @@
     });
   });
 
-  // jQuery counterUp (used in Whu Us section)
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
 
-  // Porfolio isotope and filter
   $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -111,7 +111,6 @@
     });
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -119,7 +118,6 @@
     items: 1
   });
 
-  // Clients carousel (uses the Owl Carousel library)
   $(".clients-carousel").owlCarousel({
     autoplay: true,
     dots: true,

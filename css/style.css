@@ -586,7 +586,7 @@ hr {
 --------------------------------*/
 
 #clubs {
-    padding: 90px 0 40px 0;
+    padding: 50px 0 40px 0;
 }
 
 #clubs .box {
@@ -648,6 +648,58 @@ hr {
     line-height: 28px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+
+/* CLUB RUSH
+--------------------------------*/
+
+#club_rush {
+    margin-top: 30px;
+    height: 150px;
+}
+
+.rush__background {
+    width: 100%;
+    height: 125px;
+    border-radius: 10px;
+    box-shadow: 6px 10px 19px 0px rgba(189, 189, 189, 1);
+    padding: 20px 30px;
+    background-color: #417b5a;
+    background-image: linear-gradient(45deg, #417b5a 20%, #430110 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.rush__background h3 {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.rush__background .button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    float: right;
+    line-height: 30px;
+    height: 45px;
+}
+
+.rush__background .button a {
+    color: #fff;
+}
+
+.button__container {
+    display: flex;
+    align-items: center;
 }
 
 
